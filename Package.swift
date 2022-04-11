@@ -15,14 +15,14 @@ let package = Package(
         .library(name: "llbuild2Util", targets: ["LLBUtil", "LLBBuildSystemUtil"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.1.1"),
         .package(url: "https://github.com/apple/swift-crypto.git", "1.1.4" ..< "3.0.0"),
         .package(url: "https://github.com/apple/swift-llbuild.git", from: "0.5.0"),
-        .package(url: "https://github.com/apple/swift-tools-support-async.git", from: "0.1.0"),
-        .package(url: "https://github.com/apple/swift-tools-support-core.git", from: "0.1.0"),
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.8.0"),
-        .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.0.0"),
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.2.0"),
+        .package(url: "https://github.com/apple/swift-tools-support-async.git", from: "0.8.1"),
+        .package(url: "https://github.com/apple/swift-tools-support-core.git", from: "0.2.5"),
+        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.19.0"),
+        .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.7.3"),
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2"),
     ],
     targets: [
         // Core build functionality
